@@ -12,10 +12,9 @@ env:
 # Create directories for test and coverage reports
 build:
   ci:
+    - npm install
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
-    - npm install
     - grunt
-    # Tell istanbul to generate a coverage report
     - ./node_modules/.bin/istanbul cover grunt -- -u tdd
     - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
