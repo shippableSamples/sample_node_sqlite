@@ -30,6 +30,6 @@
     "mocha": "^1.18.2",
     "superagent": "^0.18.0",
     "xunit-file": "0.0.5",
-    "sqlite3": "^2.2.3"
+    "sqlite3": "^3.1.1"
   }
 }
